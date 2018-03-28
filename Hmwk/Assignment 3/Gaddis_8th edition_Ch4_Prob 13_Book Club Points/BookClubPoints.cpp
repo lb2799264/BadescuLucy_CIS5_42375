@@ -1,7 +1,7 @@
 /* 
  * File:   main.cpp
  * Author: Lucy Badescu
- * Created on March 20, 2018, 9:49 PM
+ * Created on March 20, 2018, 9:49 PM / Modified: March 28, 2018 12:58 PM
  * Purpose: Determine points awarded according to books purchased
  */
 
@@ -20,11 +20,11 @@ using namespace std; //namespace I/O stream library created
 
 int main() {
     //Declare Variables
-    int     bookspurch,//To hold books purchased by customer
-            book0 = 0,//0 pts
-            book1 = 1,//5 pts
-            book2 = 2,//15 pts
-            book3 = 3,//30 pts
+    int     bkPur,//To hold books purchased by customer
+            book0 = 0,//0 points
+            book1 = 1,//5 points
+            book2 = 2,//15 points
+            book3 = 3,//30 points
             book4 = 4;//60 points
 
     //Initial Variables
@@ -33,18 +33,18 @@ int main() {
 
     //Display Outputs
     cout<<"Tell me how many books you purchased this month\n";
-    cout<<"and I will tell you your points ";
-    cin>>bookspurch;
+    cout<<"and I will tell you your points: ";
+    cin>>bkPur;
     {
-        if (bookspurch <= book0)
+        if (bkPur <= book0)
             cout<<"You receive 0 points.\n";
-        else if (bookspurch == book1)
+        else if (bkPur == book1)
             cout<<"You receive 5 points.\n";
-        else if (bookspurch == book2)
+        else if (bkPur == book2)
             cout<<"You receive 15 points.\n";
-        else if (bookspurch == book3)
+        else if (bkPur == book3)
             cout<<"You receive 30 points.\n";
-        else if (bookspurch >= book4)
+        else if (bkPur >= book4)
             cout<<"You receive 60 points.\n";
         
     }
